@@ -1,8 +1,6 @@
 `default_nettype none
 `timescale 1ns / 1ps
 
-
-
 /* This testbench just instantiates the module and makes some convenient wires
    that can be driven / tested by the cocotb test.py.
 */
@@ -29,7 +27,7 @@ module tb ();
   wire VGND = 1'b0;
 `endif
 
-  // Replace tt_um_example with your module name:
+  // Instantiate the gate-level netlist
   tt_um_gray_to_binary user_project (
 
       // Include power ports for the Gate Level test:
@@ -87,7 +85,7 @@ module tb ();
     ui_in = 8'b00001100; #10;
     $display(" %b -> %b", ui_in[3:0], uo_out[3:0]);
 
-  
+    $finish;
   end
 
 endmodule
