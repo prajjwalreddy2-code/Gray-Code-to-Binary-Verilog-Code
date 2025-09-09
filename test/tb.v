@@ -85,7 +85,7 @@ module tb ();
     ui_in = 8'b00001100; #10;
     $display(" %b -> %b", ui_in[3:0], uo_out[3:0]);
 
-    $finish;
+    
   end
 
 endmodule
