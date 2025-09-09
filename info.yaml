@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
+  title:        "Gray Code to Binary Verilog Code"      # Project title
+  author:       "Prajjwal Reddy T"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "This circuit converts Gray code inputs to binary outputs using XOR gates, displayed on colored LEDs"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -23,20 +23,20 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
+  ui[0]: "gray[0]"
+  ui[1]: "gray[1]"
+  ui[2]: "gray[2]"
+  ui[3]: "gray[3]"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
+  uo[0]: "binary[0]"
+  uo[1]: "binary[1]"
+  uo[2]: "binary[2]"
+  uo[3]: "binary[3]"
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
